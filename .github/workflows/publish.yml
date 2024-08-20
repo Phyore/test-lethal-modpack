@@ -2,8 +2,9 @@ name: Publish Mod
 
 # Run when a new release is... released
 on:
-  release:
-    types: [created]
+  push:
+    tags:
+      - '*'
 
 jobs:
   publish:
