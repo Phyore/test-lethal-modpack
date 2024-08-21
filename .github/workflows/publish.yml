@@ -21,5 +21,3 @@ jobs:
           dev: true
           version: ${{ github.ref_name }} # Use the tag as the package version
           community: lethal-company
-          categories: | # <-- notice this pipe character
-            modpacks
