@@ -20,4 +20,4 @@ jobs:
           name: PhyPack # the name of the package
           dev: true
           version: ${{ github.ref_name }} # Use the tag as the package version
-          community: lethal-company
+          community: test
