@@ -16,8 +16,9 @@ jobs:
         with:
           namespace: Phyore # the thunderstore 'team' to publish under
           description: Test Modpack 
-          token: ${{ secrets.DEV_THUNDERSTORE_SERVICE_KEY }}
+          token: ${{ secrets.THUNDERSTORE_SERVICE_KEY }}
           name: PhyPack # the name of the package
-          dev: true
           version: ${{ github.ref_name }} # Use the tag as the package version
-          community: test
+          community: lethal-company
+          categories: | # <-- notice this pipe character
+            modpacks
