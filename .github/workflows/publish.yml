@@ -12,7 +12,7 @@ jobs:
     steps:
       # Use checkout to publish the files in your repo
       - uses: actions/checkout@v3
-      - uses: GreenTF/upload-thunderstore-package@bc4f63784f3519bcb513f012829c2af8a03f0818
+      - uses: GreenTF/upload-thunderstore-package@87a940b1f508ab1a6866eded55a9539afdf09792
         with:
           namespace: Phyore # the thunderstore 'team' to publish under
           description: Test Modpack 
