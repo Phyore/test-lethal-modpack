@@ -20,5 +20,6 @@ jobs:
           name: PhyPack # the name of the package
           version: ${{ github.ref_name }} # Use the tag as the package version
           community: test
+          dev: true
           categories: | # <-- notice this pipe character
             modpacks
