@@ -11,14 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Use checkout to publish the files in your repo
-      - uses: actions/checkout@v3
-      - uses: GreenTF/upload-thunderstore-package@87a940b1f508ab1a6866eded55a9539afdf09792
+      - uses: actions/checkout@v4
+      - uses: GreenTF/upload-thunderstore-package@v4.3
         with:
           namespace: Phyore # the thunderstore 'team' to publish under
-          description: Test Modpack 
-          token: ${{ secrets.THUNDERSTORE_SERVICE_KEY }}
+          description: Test Modpack 3
+          token: ${{ secrets.DEV_THUNDERSTORE_SERVICE_KEY }}
           name: PhyPack # the name of the package
           version: ${{ github.ref_name }} # Use the tag as the package version
-          community: lethal-company
+          community: repo
+          dev: true
           categories: | # <-- notice this pipe character
             modpacks
