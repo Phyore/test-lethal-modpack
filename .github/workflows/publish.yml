@@ -22,4 +22,4 @@ jobs:
           community: test
           dev: true
           categories: | # <-- notice this pipe character
-            modpacks
+            mods
